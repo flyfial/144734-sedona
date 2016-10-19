@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+﻿# Личный проект «Седона»
 
 * Студент: [Anastasiya Matsuk](https://up.htmlacademy.ru/htmlcss/15/user/144734).
-* Наставник: `Неизвестно`.
+* Наставник: [Альбина Токарчук](https://up.htmlacademy.ru/htmlcss/15/user/167491).
 
 ---
 
