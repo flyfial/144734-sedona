@@ -9,7 +9,7 @@
     <header>
       <div class="container">
         <div class="logo">
-          <a href="index.html">
+          <a>
             <img src="img/sedona-logo.png">	
           </a>
         </div>
@@ -25,7 +25,7 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a href="#">Гостиницы</a>
+              <a href="inner.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -98,23 +98,19 @@
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
       <form action="sedona.com">
-        <h2>Поиск гостиницы в Седоне</h2>
-        <div>
-          <label for="arrival-date">Дата заезда:</label>
-          <input type="date" name="date" value="2016-04-24">
-        </div>
-        <div>
-          <label for="departure-date">Дата выезда:</label>
-          <input type="date" name="date" value="2016-07-04">
-        </div>
-        <div class="half-width">
-          <label for="adults">Взрослые:</label>
-          <input type="number" min="1" step="1" name="adults" value="2"> 
-        </div>
-        <div class="half-width">
-          <label for="children">Дети:</label>
-          <input type="number" min="0" step="1" name="children" value="0"> 
-        </div>
+        <a href="inner.html">Поиск гостиницы в Седоне</a>
+        <label>
+          Дата заезда:<input type="date" name="arrival-date" value="2016-04-24">
+        </label>
+        <label>
+          Дата выезда:<input type="date" name="departure-date" value="2016-07-04">
+        </label>
+        <label class="half-width">
+          Взрослые:<input type="number" min="1" step="1" name="adults" value="2"> 
+        </label>
+        <label class="half-width">
+          Дети:<input type="number" min="0" step="1" name="children" value="0"> 
+        </label>
         <div class="buttons">
           <input type="submit" value="Найти">
         </div>      	
@@ -126,7 +122,7 @@
     <footer>
       <div class="container">
         <section class="footer-hashtag">
-          <p>#VisitSedona</p>
+          #VisitSedona
         </section>
         <section class="footer-social">
           <a href="twitter.com"><img src="img/icon-twitter.png"></a>
@@ -134,8 +130,10 @@
           <a href="youtube.com"><img src="img/icon-youtube.png"></a>
         </section>
         <section class="footer-copyright">
-          <p>Website by</p>
-          <img src="img/icon-academy.png">
+          Website by
+          <a href="https://htmlacademy.ru">
+            <img src="img/icon-academy.png">
+          </a>
         </section>
       </div>
     </footer>
