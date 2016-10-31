@@ -33,7 +33,7 @@
     </header>
     <main>
       <div class="photo-introduction">
-        <img scr="img/welcome.jpg">
+        <img src="img/welcome.jpg">
       </div>
       <div class="intro">
         <h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -83,12 +83,12 @@
           <p>Все достопримечательности<br>находятся очень близко</p>
         </div>
         <div class="features-item">
-          <h2 class="features-name">Красивая дорога</h2>
+          <h2 class="features-name">Красивая<br>дорога</h2>
           <p>№4</p>
           <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
         </div>
         <div class="features-item">
-          <h2 class="features-name">Мало туристов</h2>
+          <h2 class="features-name">Мало<br>туристов</h2>
           <p>№5</p>
           <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
         </div>
@@ -97,21 +97,27 @@
         <h1>Заинтересовались?</h1>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <form action="sedona.com">
-        <a href="inner.html">Поиск гостиницы в Седоне</a>
-        <label>
-          Дата заезда:<input type="date" name="arrival-date" value="2016-04-24">
-        </label>
-        <label>
-          Дата выезда:<input type="date" name="departure-date" value="2016-07-04">
-        </label>
-        <label class="half-width">
-          Взрослые:<input type="number" min="1" step="1" name="adults" value="2"> 
-        </label>
-        <label class="half-width">
-          Дети:<input type="number" min="0" step="1" name="children" value="0"> 
-        </label>
-        <div class="buttons">
+      <form action="echo.sedona.com" method="get">
+        <div class="link-to-hotels">
+          <a href="inner.html">Поиск гостиницы в Седоне</a>
+        </div>
+        <div class="full-width">
+          <label>
+            Дата заезда:<input type="date" name="arrival-date" value="2016-04-24">
+          </label>
+          <label>
+            Дата выезда:<input type="date" name="departure-date" value="2016-07-04">
+          </label>
+        </div>
+        <div class="half-width">
+          <label>
+            Взрослые:<input type="number" min="1" step="1" name="adults" value="2"> 
+          </label>
+          <label>
+            Дети:<input type="number" min="0" step="1" name="children" value="0"> 
+          </label>
+        </div>
+        <div class="button">
           <input type="submit" value="Найти">
         </div>      	
       </form>
