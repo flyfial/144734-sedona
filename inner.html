@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -33,35 +34,32 @@
     </header>
     <main>
       <div class="search-criteria">
-        <img src="img/search-background.jpg">
         <form action="https://echo.sedona.com" method="get">
-          <div class="search-criteria-left">
-            <div class="infrastructure">
-              <h2>Инфраструктура:</h2>
-              <label>
-                <input type="checkbox" name="swimming-pool" checked> Бассейн
-              </label>
-              <label>
-                <input type="checkbox" name="parking-lot"> Парковка
-              </label>
-              <label>
-                <input type="checkbox" name="wi-fi"> Wi-Fi
-              </label>
-            </div>
-            <div class="housing-type">
-              <h2>Тип жилья:</h2>
-              <label>
-                <input type"checkbox" name="hotel" checked> Гостиница
-              </label>
-              <label>
-                <input type"checkbox" name="motel" checked> Мотель
-              </label>
-              <label>
-                <input type"checkbox" name="apartment" checked> Апартаменты
-              </label>
-            </div>
+          <div class="infrastructure">
+            <h2>Инфраструктура:</h2>
+            <label>
+              <input type="checkbox" name="swimming-pool" checked> Бассейн
+            </label>
+            <label>
+              <input type="checkbox" name="parking-lot"> Парковка
+            </label>
+            <label>
+              <input type="checkbox" name="wi-fi"> Wi-Fi
+            </label>
           </div>
-          <div class="search-criteria-right">
+          <div class="housing-type">
+            <h2>Тип жилья:</h2>
+            <label>
+              <input type"checkbox" name="hotel" checked> Гостиница
+            </label>
+            <label>
+              <input type"checkbox" name="motel" checked> Мотель
+            </label>
+            <label>
+              <input type"checkbox" name="apartment" checked> Апартаменты
+            </label>
+          </div>
+          <div class="price">
             <h2>Стоимость в сутки (Р):</h2>
             <label>
               от<input type="number" name="min-price" min="0" max="3000">
@@ -74,36 +72,36 @@
             <div class="button">
               <input type="submit" value="Показать">
             </div>
-          </div>        
+          </div>     
         </form>  
       </div>
       <div class="found">
-        <div class="found-left">
-          <h2>Найдено: 3</h2>
-          <p>Сортировка:</p>
-          <div class="sort">
-            <ul>
-              <li>
-                <a>По цене</a>	
-              </li>
-              <li>
-                <a href="#">По типу</a>
-              </li>
-              <li>
-                <a href="#">По рейтингу</a>
-              </li>
-            </ul>
-          </div>
+        <h2>Найдено: 3</h2>
+        <p>Сортировка:</p>
+        <div class="sort">
+          <ul>
+            <li>
+              <a>По цене</a>	
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
         </div>
-        <div class="found-right">
+        <div class="sort-list">
           <a class="up" href="#up"><img src="up.png"></a>
           <a class="down" href="#down"><img src="down.png"></a>
         </div>
       </div>
       <div class="hotels">
-        <div class="left">
+        <div class="hotel-photo">
+          <img src="img/amara.jpg">
+        </div>
+        <div class="hotel-description">
           <a href="#">
-            <img src="img/amara.jpg">
             <h2>Amara Resort and Spa</h2>
           </a>
           <p>Гостиница</p>
@@ -111,17 +109,17 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
         </div>
-        <div class="right">
-          <div class="rating">
-            <img src="img/amara-rating.png">
-          </div>
+        <div class="rating">
+          <img src="img/rating.png">
           <p>Рейтинг: 8,5</p>
         </div>
       </div>
       <div class="hotels">
-        <div class="left">
+        <div class="hotel-photo">
+          <img src="img/quail.jpg">
+        </div>
+        <div class="hotel-description">
           <a href="#">
-            <img src="img/quail.jpg">
             <h2>Desert Quali Inn</h2>
           </a>
           <p>Мотель</p>
@@ -129,17 +127,17 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
         </div>
-        <div class="right">
-          <div class="rating">
-            <img src="img/quail-rating.png">
-          </div>
+        <div class="rating">
+          <img src="img/rating.png">
           <p>Рейтинг: 8,9</p>
         </div>
       </div>
       <div class="hotels">
-        <div class="left">
+        <div class="hotel-photo">
+          <img src="img/poco-diablo.jpg">
+        </div>
+        <div class="hotel-description">
           <a href="#">
-            <img src="img/poco-diablo.jpg">
             <h2>Villas at Poco Diablo</h2>
           </a>
           <p>Апартаменты</p>
@@ -147,10 +145,8 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
         </div>
-        <div class="right">
-          <div class="rating">
-            <img src="img/poco-diablo-rating.png">
-          </div>
+        <div class="rating">
+          <img src="img/rating.png">
           <p>Рейтинг: 9,2</p>
         </div>
       </div>
