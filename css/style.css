@@ -4,8 +4,7 @@ body {
     color: #333333;
     font-weight: normal;
     font-family: "PT Sans", sans-serif;   
-    background-color: #f2f2f2;
-    margin: 0 0 0 40px;  
+    background-color: #f2f2f2; 
 }
 
 h1 {
@@ -22,6 +21,12 @@ h2 {
     color: #000000;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
+}
+
+header,
+main,
+footer {
+	width: 1200px;
 }
 
 header {
@@ -56,34 +61,50 @@ header {
 
 .intro {
     height: 105px;
+	margin-bottom: 53px;
+	text-align: center;
 }
 
 .real-town {
     display: flex;
     justify-content: flex-start;
+	max-width: 1200px;
+	max-height: 256px;
+	margin-bottom: 60px;
     
 }
 
 .real-town-left {
     min-width: 400px;
+	padding: 50px 0;
+	text-align: center;
+	background-color: #81b3d2;
 }
 
 .features-top {
     display: flex;
     justify-content: center;
+	margin-bottom: 60px;
 }
 
 .features-top .features-item {
     min-width: 400px;
+	text-align: center;
 }
 
 .devil-bridge {
     display: flex;
     justify-content: flex-start;
+	max-width: 1200px;
+	max-height: 256px;
+	margin-bottom: 45px;
 }
 
 .devil-bridge-right {
     min-width: 400px;
+	padding: 50px 0;
+	text-align: center;
+	background-color: #81b3d2;
 }
 
 .features-bottom {
@@ -94,16 +115,19 @@ header {
 
 .features-bottom .features-item {
     min-width: 400px;
+	text-align: center;
 }
 
 .interested {
     height: 100px;
-    margin-bottom: 50px;
+	text-align: center;
+	margin-bottom: 135px;
 }
 
 form {
     width: 568px;
     height: 481px;
+	margin: 0 auto;
 }
 
 .map {
