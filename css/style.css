@@ -34,7 +34,7 @@ header {
 }
 
 .container {
-	display: flex;
+    display: flex;
     position: relative;
     width: 1056px;
     margin: 0 auto;
@@ -43,7 +43,7 @@ header {
 
 .logo {
     position: absolute;
-	left: 528px;
+    left: 528px;
 }
 
 .main-navigation {
@@ -52,83 +52,78 @@ header {
 }
 
 .main-navigation ul {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 
 li a {
-	text-decoration: none;
-	color: black;
-	text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 }
 
 .photo-introduction {
-	margin: 0 auto 63px;
-    background: #81b3d2 url("img/sedona.jpg") no-repeat;
+    height: 508px; 
+    margin: 0 auto 63px;
+    background: #81b3d2 url("../img/sedona.jpg") no-repeat;
 }
 
-.photo-introduction::after {
-	background: url("img/white-mask.png");
+.photo-introduction img {
+    margin: 76px 371px 80px;
 }
 
-.welcome {
-	margin: 76px 371px 80px;
-    width: 458px;
-    height: 352px;
-}
-
-.mask {
-    width: 100%;
-    height: 57px;
+.photo-introduction::before {
+    content: url("../img/white-mask.png");
+    position: absolute;
+    top: 508px;
 }
 
 .intro {
     height: 105px;
-	margin-bottom: 53px;
-	text-align: center;
+    margin-bottom: 53px;
+    text-align: center;
 }
 
 .real-town {
     display: flex;
     justify-content: flex-start;
-	max-width: 1200px;
-	max-height: 256px;
-	margin-bottom: 60px;
-    
+    max-width: 1200px;
+    max-height: 256px;
+    margin-bottom: 60px;   
 }
 
 .real-town-left {
     min-width: 400px;
-	padding: 50px 0;
-	text-align: center;
-	background-color: #81b3d2;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #81b3d2;
 }
 
 .features-top {
     display: flex;
     justify-content: center;
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .features-top .features-item {
     min-width: 400px;
-	text-align: center;
+    text-align: center;
 }
 
 .devil-bridge {
     display: flex;
     justify-content: flex-start;
-	max-width: 1200px;
-	max-height: 256px;
-	margin-bottom: 45px;
+    max-width: 1200px;
+    max-height: 256px;
+    margin-bottom: 45px;
 }
 
 .devil-bridge-right {
     min-width: 400px;
-	padding: 50px 0;
-	text-align: center;
-	background-color: #81b3d2;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #81b3d2;
 }
 
 .features-bottom {
@@ -139,19 +134,19 @@ li a {
 
 .features-bottom .features-item {
     min-width: 400px;
-	text-align: center;
+    text-align: center;
 }
 
 .interested {
     height: 100px;
-	text-align: center;
-	margin-bottom: 135px;
+    text-align: center;
+    margin-bottom: 135px;
 }
 
 form {
     width: 568px;
     height: 481px;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .map {
