@@ -26,7 +26,7 @@ h2 {
 header,
 main,
 footer {
-	width: 1200px;
+    width: 1200px;
 }
 
 header {
@@ -67,16 +67,19 @@ li a {
     height: 508px; 
     margin: 0 auto 63px;
     background: #81b3d2 url("../img/sedona.jpg") no-repeat;
+    text-align: center;
 }
 
 .photo-introduction img {
-    margin: 76px 371px 80px;
+    margin-top: 76px;
+    margin-bottom: 80px;
 }
 
 .photo-introduction::before {
     content: url("../img/white-mask.png");
     position: absolute;
     top: 508px;
+    left: 0px;
 }
 
 .intro {
@@ -155,8 +158,14 @@ form {
 }
 
 footer .container {
+    min-height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.search-criteria {
+    height: 217px;
 }
 
 .search-criteria form {
@@ -164,6 +173,16 @@ footer .container {
     width: 1056px;
     margin: 0 auto;
     padding: 30px 73px;
+    background: url("../img/search-background.jpg") no-repeat;
+    color: white;
+}
+
+.search-criteria div {
+    max-height: 160px;
+}
+
+form h2 {
+    color: white;
 }
 
 .infrastructure {
