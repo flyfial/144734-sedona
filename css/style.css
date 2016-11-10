@@ -27,6 +27,7 @@ header,
 main,
 footer {
     width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -43,7 +44,8 @@ header {
 
 .logo {
     position: absolute;
-    left: 528px;
+    left: 50%;
+    margin-left: -69px;
 }
 
 .main-navigation {
@@ -79,7 +81,8 @@ li a {
     content: url("../img/white-mask.png");
     position: absolute;
     top: 508px;
-    left: 0px;
+    left: 50%;
+    margin-left: -600px;  
 }
 
 .intro {
