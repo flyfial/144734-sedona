@@ -50,26 +50,33 @@
           <div class="housing-type">
             <h2>Тип жилья:</h2>
             <label>
-              <input type"checkbox" name="hotel" checked> Гостиница
+              <input type="checkbox" name="hotel" checked> Гостиница
             </label>
             <label>
-              <input type"checkbox" name="motel" checked> Мотель
+              <input type="checkbox" name="motel" checked> Мотель
             </label>
             <label>
-              <input type"checkbox" name="apartment" checked> Апартаменты
+              <input type="checkbox" name="apartment" checked> Апартаменты
             </label>
           </div>
           <div class="price">
             <h2>Стоимость в сутки (Р):</h2>
-            <label>
-              от<input type="number" name="min-price" min="0" max="3000">
-            </label>
-            <label>
-              до<input type="number" name="max-price" min="0" max="3000">
-            </label>
-            <div class="input-range">
+            <div class="price-controls">
+              <label class="min-price">
+                от<input type="number" name="min-price" min="0" max="3000" value="0">
+              </label>
+              <label class="max-price">
+                до<input type="number" name="max-price" min="0" max="3000" value="3000">
+              </label>
             </div>
-            <div class="button">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <div class="inner-button">
               <input type="submit" value="Показать">
             </div>
           </div>     
@@ -81,7 +88,7 @@
         <div class="sort">
           <ul>
             <li>
-              <a>По цене</a>	
+              <a class="active">По цене</a>	
             </li>
             <li>
               <a href="#">По типу</a>
@@ -92,8 +99,8 @@
           </ul>
         </div>
         <div class="sort-list">
-          <a class="up" href="#up"><img src="up.png"></a>
-          <a class="down" href="#down"><img src="down.png"></a>
+          <a class="up" href="#up"></a>
+          <a class="down" href="#down"></a>
         </div>
       </div>
       <div class="hotels">
@@ -104,13 +111,24 @@
           <a href="#">
             <h2>Amara Resort and Spa</h2>
           </a>
-          <p>Гостиница</p>
-          <p>От 3500 Р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <div class="details-n-book">
+            <div class="details">
+              <p>Гостиница</p>
+              <a class="more" href="#">Подробнее</a>
+            </div>
+            <div class="book">
+              <p>От 3500 Р.</p>
+              <a class="reserve" href="#">Забронировать</a>
+            </div>
+          </div>
         </div>
         <div class="rating">
-          <img src="img/rating.png">
+          <div class="star">
+            <img src="img/rating.png" width="17" height="17">
+            <img src="img/rating.png" width="17" height="17">
+            <img src="img/rating.png" width="17" height="17">
+            <img src="img/rating.png" width="17" height="17">
+          </div>
           <p>Рейтинг: 8,5</p>
         </div>
       </div>
@@ -120,15 +138,24 @@
         </div>
         <div class="hotel-description">
           <a href="#">
-            <h2>Desert Quali Inn</h2>
+            <h2>Desert Quail Inn</h2>
           </a>
-          <p>Мотель</p>
-          <p>От 2000 Р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <div class="details-n-book">
+            <div class="details">
+              <p>Мотель</p>
+              <a class="more" href="#">Подробнее</a>
+            </div>
+            <div class="book">
+              <p>От 2000 Р.</p>
+              <a class="reserve" href="#">Забронировать</a>
+            </div>
+          </div>
         </div>
         <div class="rating">
-          <img src="img/rating.png">
+          <div class="star">
+            <img src="img/rating.png" width="17" height="17">
+            <img src="img/rating.png" width="17" height="17">
+          </div>
           <p>Рейтинг: 8,9</p>
         </div>
       </div>
@@ -140,13 +167,23 @@
           <a href="#">
             <h2>Villas at Poco Diablo</h2>
           </a>
-          <p>Апартаменты</p>
-          <p>От 4000 Р.</p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <div class="details-n-book">
+            <div class="details">
+              <p>Апартаменты</p>
+              <a class="more" href="#">Подробнее</a>
+            </div>
+            <div class="book">
+              <p>От 4000 Р.</p>
+              <a class="reserve" href="#">Забронировать</a>
+            </div>
+          </div>
         </div>
         <div class="rating">
-          <img src="img/rating.png">
+          <div class="star">
+            <img src="img/rating.png" width="17" height="17">
+            <img src="img/rating.png" width="17" height="17">
+            <img src="img/rating.png" width="17" height="17">
+          </div>
           <p>Рейтинг: 9,2</p>
         </div>
       </div>
@@ -157,15 +194,13 @@
           #VisitSedona
         </section>
         <section class="footer-social">
-          <a href="twitter.com"><img src="img/icon-twitter.png"></a>
-          <a href="facebook.com"><img src="img/icon-facebook.png"></a>
-          <a href="youtube.com"><img src="img/icon-youtube.png"></a>
+          <a class="social social-twitter" href="twitter.com"></a>
+          <a class="social social-facebook" href="facebook.com"></a>
+          <a class="social social-youtube" href="youtube.com"></a>
         </section>
         <section class="footer-copyright">
-          Website by
-          <a href="https://htmlacademy.ru">
-            <img src="img/icon-academy.png">
-          </a>
+          <span>Website by</span>
+          <a class="academy" href="https://htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
