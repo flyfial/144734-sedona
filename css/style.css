@@ -4,7 +4,7 @@ body {
     color: #333333;
     font-weight: normal;
     font-family: "PT Sans", sans-serif;
-	text-transform: uppercase;   
+    text-transform: uppercase;   
     background-color: #f2f2f2; 
 }
 
@@ -30,6 +30,7 @@ main,
 footer {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 10px 10px 0 #dbdbdb;
 }
 
 header {
@@ -41,7 +42,8 @@ header {
     position: relative;
     width: 1056px;
     margin: 0 auto;
-    padding: 0 73px;
+    padding: 0 72px;
+    background: white;
 }
 
 .logo {
@@ -62,39 +64,51 @@ header {
     padding: 0;
 }
 
-ul li:first-child {
+.main-navigation ul li:first-child {
     width: 240px;
     text-align: start;
 }
 
-ul li:nth-child(2) {
+.main-navigation ul li:nth-child(2) {
     width: 288px;
     text-align: start;
 }
 
-ul li:nth-child(3) {
+.main-navigation ul li:nth-child(3) {
     width: 288px;
     text-align: end;
 }
 
-ul li:last-child {
+.main-navigation ul li:last-child {
     width: 240px;
     text-align: end; 
 }
 
-li a {
+.main-navigation li a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-li a:hover {
+.main-navigation li a:hover {
     color: #81b3d2;
 }
 
-li a:active {
+.main-navigation li a:active {
     opacity: 0.3;
+}
+
+.main-navigation li .active {
+    color: #766357;
+}
+
+.main-navigation li .active:hover {
+    color: #604e43;
+}
+
+.main-navigation li .active:active {
+    color: #d6d0cc;
 }
 
 main {
@@ -261,7 +275,7 @@ input[type="text"]:hover {
 }
 
 input[type="text"]:focus {
-	outline: 2px solid #ebebeb;
+    outline: 2px solid #ebebeb;
     background-color: white;
 }
 	
@@ -278,32 +292,42 @@ input[type="text"]:focus {
     margin-right: 16px;
 }
 
-.arrivals label::after {
-    content: "";
+.arrivals .calendar {
+    display: inline-block;
     background: url("../img/icon-calendar.png") no-repeat 0 0;
     width: 21px;
     height: 22px;
     position: absolute;
     top: 64px;
     right: 70px;
+    cursor: pointer;
 }
 
-.arrivals label:hover::after {
-    background-position: 0 -23px;
+.arrivals .calendar:hover {
+    background-position: 0 -22px;
 }
 
-.departures label::after {
-    content: "";
+.arrivals .calendar:active {
+    background-position: 0 -44px;
+}
+
+.departures .calendar {
+    display: inline-block;
     background: url("../img/icon-calendar.png") no-repeat 0 0;
     width: 21px;
     height: 22px;
     position: absolute;
     top: 132px;
     right: 70px;
+    cursor: pointer;
 }
 
-.departures label:hover::after {
-    background-position: 0 -23px;
+.departures .calendar:hover {
+    background-position: 0 -22px;
+}
+
+.departures .calendar:active {
+    background-position: 0 -44px;
 }
 
 .guests {
@@ -320,60 +344,80 @@ input[type="text"]:focus {
     margin-right: 26px;
 }
 
-.adults label::before {
-    content: "";
-    background: url("../img/icon-minus.png") no-repeat 0 0;
+.adults .minus {
+    display: inline-block;
     width: 11px;
     height: 3px;
+    background: url("../img/icon-minus.png") no-repeat;
+    vertical-align: middle;
     position: absolute;
+    bottom: 180px;
     left: 175px;
-    top: 210px;
 }
 
-.adults label:hover::before {
+.adults .minus:hover {
     background-position: 0 -4px;
 }
 
-.adults label::after {
-    content: "";
-    background: url("../img/icon-plus.png") no-repeat 0 0;
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    left: 250px;
-    top: 207px;
+.adults .minus:active {
+    background-position: 0 -8px;
 }
 
-.adults label:hover::after {
+.adults .plus {
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    background: url("../img/icon-plus.png") no-repeat;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 176px;
+    left: 255px;
+}
+
+.adults .plus:hover {
     background-position: 0 -12px;
 }
 
-.children label::before {
-    content: "";
-    background: url("../img/icon-minus.png") no-repeat 0 0;
+.adults .plus:active {
+    background-position: 0 -24px;
+}
+
+.children .minus {
+    display: inline-block;
     width: 11px;
     height: 3px;
+    background: url("../img/icon-minus.png") no-repeat;
+    vertical-align: middle;
     position: absolute;
+    bottom: 180px;
     right: 145px;
-    top: 210px;
 }
 
-.children label:hover::before {
+.children .minus:hover {
     background-position: 0 -4px;
 }
 
-.children label::after {
-    content: "";    
-    background: url("../img/icon-plus.png") no-repeat 0 0;
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    right: 70px;
-    top: 207px;
+.children .minus:active {
+    background-position: 0 -8px;
 }
 
-.children label:hover::after {
+.children .plus {
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    background: url("../img/icon-plus.png") no-repeat;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 176px;
+    right: 65px;
+}
+
+.children .plus:hover {
     background-position: 0 -12px;
+}
+
+.children .plus:active {
+    background-position: 0 -24px;
 }
 
 .button input[type="submit"] {
@@ -443,6 +487,7 @@ footer .container {
 .footer-social a:first-child {
     margin-left: 28px;
 }
+
 .footer-social a:last-child {
     margin-right: 0;
 }
@@ -452,7 +497,7 @@ footer .container {
 }
 
 .social-twitter:active {
-    opacity: 0.3;
+    background-position: 0 -48px;
 }
 
 .social-facebook {
@@ -460,7 +505,7 @@ footer .container {
 }
 
 .social-facebook:active {
-    opacity: 0.3;
+    background-position: -51px -48px;
 }
 
 .social-youtube {
@@ -468,7 +513,7 @@ footer .container {
 }
 
 .social-youtube:active {
-    opacity: 0.3;
+    background-position: -103px -48px;
 }
 
 .footer-copyright {
@@ -521,11 +566,53 @@ footer .container {
     min-width: 254px;
 }
 
+.infrastructure input {
+    visibility: hidden;
+}
+
+.infrastructure label {
+    margin-left: 22px;
+}
+
+.infrastructure label::before {
+    content: "";
+    position: absolute;
+    left: 103px;
+    width: 26px;
+    height: 22px;
+    background: url("../img/icon-checkbox.png") no-repeat 0 0;
+}
+
+.infrastructure .checked::before {
+    background-position: 0 -23px;
+}
+
 .housing-type {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: 474px;
+}
+
+.housing-type input {
+    visibility: hidden;
+}
+
+.housing-type label {
+    margin-left: 22px;
+}
+
+.housing-type label::before {
+    content: "";
+    position: absolute;
+    left: 355px;
+    width: 26px;
+    height: 22px;
+    background: url("../img/icon-checkbox.png") no-repeat 0 0;
+}
+
+.housing-type .checked::before {
+    background-position: 0 -23px;
 }
 
 .price {
@@ -594,7 +681,7 @@ footer .container {
 }
 
 .range-toggle {
-	position: absolute;
+    position: absolute;
     top: -9px;
     width: 4px;
     height: 4px;
@@ -676,6 +763,7 @@ form h2 {
 
 .sort ul {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     max-width: 250px;
@@ -684,6 +772,7 @@ form h2 {
 .sort ul li a {
     font-size: 12px;
     color: #b2b2b2;
+    text-decoration: none;
     border-bottom: 1px dotted #81b3d2;
 }
 
@@ -726,16 +815,8 @@ form h2 {
     display: inline-block;
     width: 11px;
     height: 10px;
-    background: url("../img/icon-down.png") no-repeat 0 0;
+    background: url("../img/icon-down.png") no-repeat 0 -22px;
     vertical-align: middle;    
-}
-
-.down:hover {
-    background-position: 0 -12px;
-}
-
-.down:active {
-    background-position: 0 -23px;
 }
 
 .hotels {
@@ -772,6 +853,7 @@ form h2 {
 }
 
 .hotel-description p {
+    margin-top: 9px;
     margin-bottom: 10px;
 }
 
@@ -786,6 +868,9 @@ form h2 {
 }
 
 .more {
+    display: inline-block;
+    width: 80px;
+    height: 21px;
     padding: 3px 15px;
     color: white;
     font-weight: bold;
@@ -802,6 +887,9 @@ form h2 {
 }
 
 .reserve {
+    display: inline-block;
+    width: 112px;
+    height: 21px;
     padding: 3px 15px;
     color: white;
     font-weight: bold;
