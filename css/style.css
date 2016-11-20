@@ -3,7 +3,7 @@ body {
     line-height: 21px;
     color: #333333;
     font-weight: normal;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     text-transform: uppercase;   
     background-color: #f2f2f2; 
 }
@@ -13,7 +13,7 @@ h1 {
     line-height: 24px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
 }
 
 h2 {
@@ -21,7 +21,7 @@ h2 {
     line-height: 21px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     text-transform: uppercase;
 }
 
@@ -172,11 +172,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
-}
-
-.feature-img {
-	height: 76px;
+    margin-bottom: 65px;
 }
 
 .features-top .features-item {
@@ -281,22 +277,13 @@ form {
 
 .arrivals input[type="text"],
 .departures input[type="text"] {
-    position: relative;
-    width: 346px;
-    height: 38px;
+    width: 345px;
+    height: 36px;
     text-indent: 12px;
     font-family: inherit;
     font-weight: bold;
     background-color: #f2f2f2;
     border: 0;
-}
-
-.arrivals input[type="text"] {
-    margin-left: 18px;
-}
-
-.departures input[type="text"] {
-    margin-left: 14px;
 }
 
 .adults input[type="text"],
@@ -324,13 +311,21 @@ input[type="text"]:focus {
     margin-bottom: 28px;
 }
 
+.arrivals span {
+    margin-right: 23px;
+}
+
+.departures span {
+    margin-right: 20px;
+}
+
 .arrivals .calendar {
     display: inline-block;
     background: url("../img/icon-calendar.png") no-repeat 0 0;
     width: 21px;
     height: 22px;
     position: absolute;
-    top: 63px;
+    top: 62px;
     right: 65px;
     cursor: pointer;
 }
@@ -349,7 +344,7 @@ input[type="text"]:focus {
     width: 21px;
     height: 22px;
     position: absolute;
-    top: 130px;
+    top: 128px;
     right: 65px;
     cursor: pointer;
 }
@@ -365,29 +360,26 @@ input[type="text"]:focus {
 .guests {
     display: flex;
     justify-content: space-between;
-    max-width: 458px;
+    max-width: 455px;
     margin-bottom: 55px;
 }
 
 .adults {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 226px;
+    margin-top: 3px;
 }
-
-.adults label {
-    width: 112px;}
 
 .children {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 180px;
+    margin-top: 3px;
 }
 
-.children label {
-    width: 66px;
+.adults span {
+    margin-right: 77px;
+}
+
+.children span {
+    margin-right: 68px;
 }
 
 .adults .minus {
@@ -396,6 +388,9 @@ input[type="text"]:focus {
     height: 38px;
     background: #f2f2f2 url("../img/icon-minus.png") no-repeat;
     vertical-align: middle;
+    position: absolute;
+    bottom: 167px;
+    left: 166px;
 }
 
 .adults .minus:hover {
@@ -412,6 +407,9 @@ input[type="text"]:focus {
     height: 38px;
     background: #f2f2f2 url("../img/icon-plus.png") no-repeat;
     vertical-align: middle;
+    position: absolute;
+    bottom: 167px;
+    left: 241px;
 }
 
 .adults .plus:hover {
@@ -428,6 +426,9 @@ input[type="text"]:focus {
     height: 38px;
     background: #f2f2f2 url("../img/icon-minus.png") no-repeat;
     vertical-align: middle;
+    position: absolute;
+    bottom: 167px;
+    right: 132px;
 }
 
 .children .minus:hover {
@@ -444,6 +445,9 @@ input[type="text"]:focus {
     height: 38px;
     background: #f2f2f2 url("../img/icon-plus.png") no-repeat;
     vertical-align: middle;
+    position: absolute;
+    bottom: 167px;
+    right: 57px;
 }
 
 .children .plus:hover {
@@ -485,7 +489,7 @@ input[type="submit"]:active {
 
 footer .container {
     position: relative;
-    min-height: 122px;
+    min-height: 120px;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
@@ -611,18 +615,16 @@ footer .bg-opacity {
 }
 
 .price {
-    min-width: 318px;
-    margin-left: 10px;
+    min-width: 328px;
 }
 
 .price h2 {
-    margin-left: -10px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .price-controls {
     position: relative;
-    height: 32px;
+    height: 36px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -641,7 +643,7 @@ footer .bg-opacity {
 
 .price-controls label {
     display: inline-block;
-    line-height: 34px;
+    line-height: 38px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -649,7 +651,7 @@ footer .bg-opacity {
 .price-controls .min-price,
 .price-controls .max-price {
     width: 90px;
-    padding-left: 60px;
+    padding-left: 65px;
 }
 
 .price-controls input {
@@ -716,7 +718,7 @@ form h2 {
 .inner-button input[type="submit"] {
     display: block;
     margin: 0 auto;
-    padding: 6px 30px;
+    padding: 6px 35px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -918,8 +920,4 @@ form h2 {
 
 .star {
     text-align: end;
-}
-
-.star img {
-    margin-left: 4px;
 }
