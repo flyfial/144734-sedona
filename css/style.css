@@ -30,7 +30,7 @@ main,
 footer {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 10px 10px 0 #dbdbdb;
+    box-shadow: 0 10px 10px 0 rgba(0, 1, 1, 0.2);
 }
 
 header {
@@ -101,14 +101,11 @@ header {
 
 .main-navigation li .active {
     color: #766357;
+    cursor: default;
 }
 
 .main-navigation li .active:hover {
     color: #604e43;
-}
-
-.main-navigation li .active:active {
-    color: #d6d0cc;
 }
 
 main {
@@ -137,12 +134,13 @@ main {
 
 .intro {
     height: 105px;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 .intro h2 {
     line-height: 26px;
+    margin-bottom: 25px;
 }
 
 .real-town {
@@ -163,17 +161,31 @@ main {
 
 .real-town-left h2 {
     color: white;
+    margin-top: 2px;
+}
+
+.real-town-left p {
+    margin-top: 22px;
 }     
 
 .features-top {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    align-items: center;
+    margin-bottom: 65px;
 }
 
 .features-top .features-item {
     min-width: 400px;
     text-align: center;
+}
+
+.features-top .features-name {
+    margin-top: 22px;
+}
+
+.features-item p {
+    margin-top: 22px;
 }
 
 .devil-bridge {
@@ -193,13 +205,18 @@ main {
 
 .devil-bridge-right h2 {
     color: white;
+    margin-top: 5px;
+}
+
+.devil-bridge-right p {
+    margin-top: 25px;
 }
 
 .features-bottom {
     display: flex;
     justify-content: center;
     padding-top: 45px;
-    padding-bottom: 60px;
+    padding-bottom: 47px;
     margin-bottom: 55px;
     background-color: #eeeeee;
 }
@@ -209,10 +226,19 @@ main {
     text-align: center;
 }
 
+.features-bottom .features-name {
+    margin-top: 5px;
+}
+
 .interested {
     height: 100px;
     text-align: center;
     margin-bottom: 50px;
+}
+
+.interested p {
+    margin-top: 30px;
+    line-height: 24px;
 }
 
 .link-to-hotels {
@@ -246,12 +272,13 @@ form {
     font-weight: bold;
     z-index: 2;
     background: white;
+    box-shadow: 0 10px 20px 0 rgba(0, 1, 1, 0.2);
 }
 
 .arrivals input[type="text"],
 .departures input[type="text"] {
-    width: 348px;
-    height: 38px;
+    width: 345px;
+    height: 36px;
     text-indent: 12px;
     font-family: inherit;
     font-weight: bold;
@@ -261,8 +288,8 @@ form {
 
 .adults input[type="text"],
 .children input[type="text"] {
-    width: 114px;
-    height: 38px;
+    width: 38px;
+    height: 36px;
     font-family: inherit;
     font-weight: bold;
     text-align: center;
@@ -281,15 +308,15 @@ input[type="text"]:focus {
 	
 .arrivals,
 .departures {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
 }
 
 .arrivals span {
-    margin-right: 19px;
+    margin-right: 23px;
 }
 
 .departures span {
-    margin-right: 16px;
+    margin-right: 20px;
 }
 
 .arrivals .calendar {
@@ -298,8 +325,8 @@ input[type="text"]:focus {
     width: 21px;
     height: 22px;
     position: absolute;
-    top: 64px;
-    right: 70px;
+    top: 62px;
+    right: 65px;
     cursor: pointer;
 }
 
@@ -317,8 +344,8 @@ input[type="text"]:focus {
     width: 21px;
     height: 22px;
     position: absolute;
-    top: 132px;
-    right: 70px;
+    top: 128px;
+    right: 65px;
     cursor: pointer;
 }
 
@@ -333,91 +360,102 @@ input[type="text"]:focus {
 .guests {
     display: flex;
     justify-content: space-between;
+    max-width: 455px;
     margin-bottom: 55px;
 }
 
+.adults {
+    width: 226px;
+    margin-top: 3px;
+}
+
+.children {
+    width: 180px;
+    margin-top: 3px;
+}
+
 .adults span {
-    margin-right: 36px;
+    margin-right: 77px;
 }
 
 .children span {
-    margin-right: 26px;
+    margin-right: 68px;
 }
 
 .adults .minus {
     display: inline-block;
-    width: 11px;
-    height: 3px;
-    background: url("../img/icon-minus.png") no-repeat;
+    width: 38px;
+    height: 38px;
+    background: #f2f2f2 url("../img/icon-minus.png") no-repeat;
     vertical-align: middle;
     position: absolute;
-    bottom: 180px;
-    left: 175px;
+    bottom: 167px;
+    left: 166px;
 }
 
 .adults .minus:hover {
-    background-position: 0 -4px;
+    background-position: 0 -38px;
 }
 
 .adults .minus:active {
-    background-position: 0 -8px;
+    background-position: 0 -76px;
 }
 
 .adults .plus {
     display: inline-block;
-    width: 12px;
-    height: 11px;
-    background: url("../img/icon-plus.png") no-repeat;
+    width: 38px;
+    height: 38px;
+    background: #f2f2f2 url("../img/icon-plus.png") no-repeat;
     vertical-align: middle;
     position: absolute;
-    bottom: 176px;
-    left: 255px;
+    bottom: 167px;
+    left: 241px;
 }
 
 .adults .plus:hover {
-    background-position: 0 -12px;
+    background-position: 0 -38px;
 }
 
 .adults .plus:active {
-    background-position: 0 -24px;
+    background-position: 0 -76px;
 }
 
 .children .minus {
     display: inline-block;
-    width: 11px;
-    height: 3px;
-    background: url("../img/icon-minus.png") no-repeat;
+    width: 38px;
+    height: 38px;
+    background: #f2f2f2 url("../img/icon-minus.png") no-repeat;
     vertical-align: middle;
     position: absolute;
-    bottom: 180px;
-    right: 145px;
+    bottom: 167px;
+    right: 132px;
 }
 
 .children .minus:hover {
-    background-position: 0 -4px;
+    background-position: 0 -38px;
 }
 
 .children .minus:active {
-    background-position: 0 -8px;
+    background-position: 0 -76px;
 }
 
 .children .plus {
     display: inline-block;
-    width: 12px;
-    height: 11px;
-    background: url("../img/icon-plus.png") no-repeat;
+    width: 38px;
+    height: 38px;
+    background: #f2f2f2 url("../img/icon-plus.png") no-repeat;
     vertical-align: middle;
     position: absolute;
-    bottom: 176px;
-    right: 65px;
+    bottom: 167px;
+    right: 57px;
 }
 
 .children .plus:hover {
-    background-position: 0 -12px;
+    background-position: 0 -38px;
 }
 
 .children .plus:active {
-    background-position: 0 -24px;
+    background-position: 0 -76px;
 }
 
 .button input[type="submit"] {
@@ -458,6 +496,9 @@ footer .container {
     align-items:center;
     z-index: 2;
     background: white;
+}
+
+footer .bg-opacity {
     opacity: 0.9;
 }
 
@@ -471,7 +512,7 @@ footer .container {
     display: inline-block;
     width: 46px;
     height: 48px;
-    margin-right: 6px;
+    margin-right: 3px;
     background: #81b3d2 url("../img/social.png") no-repeat;
     vertical-align: middle;
 }
@@ -542,7 +583,7 @@ footer .container {
 }
 
 .container .footer-copyright span {
-    margin-right: 8px;
+    margin-right: 5px;
 }
 
 .search-criteria {
@@ -566,53 +607,11 @@ footer .container {
     min-width: 254px;
 }
 
-.infrastructure input {
-    visibility: hidden;
-}
-
-.infrastructure label {
-    margin-left: 22px;
-}
-
-.infrastructure label::before {
-    content: "";
-    position: absolute;
-    left: 103px;
-    width: 26px;
-    height: 22px;
-    background: url("../img/icon-checkbox.png") no-repeat 0 0;
-}
-
-.infrastructure .checked::before {
-    background-position: 0 -23px;
-}
-
 .housing-type {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: 474px;
-}
-
-.housing-type input {
-    visibility: hidden;
-}
-
-.housing-type label {
-    margin-left: 22px;
-}
-
-.housing-type label::before {
-    content: "";
-    position: absolute;
-    left: 355px;
-    width: 26px;
-    height: 22px;
-    background: url("../img/icon-checkbox.png") no-repeat 0 0;
-}
-
-.housing-type .checked::before {
-    background-position: 0 -23px;
 }
 
 .price {
@@ -747,18 +746,17 @@ form h2 {
 }
 
 .found h2 {
-    width: 164px;
-    text-align: start;
+    margin-right: 40px;
 }
 
 .found p {
-    width: 116px;
+    font-size: 12px;
     color: black;
     text-align: start;
 }
 
 .found .sort {
-    width: 740px;
+    width: 770px;
 }
 
 .sort ul {
@@ -766,7 +764,7 @@ form h2 {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    max-width: 250px;
+    max-width: 240px;
 }
 
 .sort ul li a {
@@ -825,7 +823,7 @@ form h2 {
     align-items: center;
     width: 1056px;
     padding: 0 72px;
-    height: 152px;
+    height: 150px;
     margin: 0 auto;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -923,4 +921,3 @@ form h2 {
 .star {
     text-align: end;
 }
-
