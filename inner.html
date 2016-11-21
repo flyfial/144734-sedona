@@ -11,7 +11,7 @@
       <div class="container">
         <div class="logo">
           <a href="index.html">
-            <img src="img/sedona-logo.png" alt="City of Sedona">	
+            <img src="img/sedona-logo.png" width="138" height="70" alt="City of Sedona">	
           </a>
         </div>
         <nav class="main-navigation">
@@ -37,27 +37,33 @@
         <form action="https://echo.sedona.com" method="get">
           <div class="infrastructure">
             <h2>Инфраструктура:</h2>
-            <label class="checked">
-              <input type="checkbox" name="swimming-pool" checked> Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="parking-lot"> Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="wi-fi"> Wi-Fi
-            </label>
+            <div class="swimming-pool">
+              <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+              <label for="swimming-pool">Бассейн</label>
+            </div>
+            <div class="parking-lot">
+              <input type="checkbox" name="parking-lot" id="parking-lot">
+              <label for="parking-lot">Парковка</label>
+              </div>
+            <div class="wi-fi">
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </div>
           </div>
           <div class="housing-type">
             <h2>Тип жилья:</h2>
-            <label class="checked">
-              <input type="checkbox" name="hotel" checked> Гостиница
-            </label>
-            <label class="checked">
-              <input type="checkbox" name="motel" checked> Мотель
-            </label>
-            <label class="checked">
-              <input type="checkbox" name="apartment" checked> Апартаменты
-            </label>
+            <div class="hotel">
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+              </div>
+            <div class="motel">
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+              </div>
+            <div class="apartment">
+              <input type="checkbox" name="apartment" id="apartment" checked>
+              <label for="apartment">Апартаменты</label>
+              </div>
           </div>
           <div class="price">
             <h2>Стоимость в сутки (Р):</h2>
@@ -105,7 +111,7 @@
       </div>
       <div class="hotels">
         <div class="hotel-photo">
-          <img src="img/amara.jpg" alt="Amara Resort and Spa">
+          <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort and Spa">
         </div>
         <div class="hotel-description">
           <a href="#">
@@ -134,7 +140,7 @@
       </div>
       <div class="hotels">
         <div class="hotel-photo">
-          <img src="img/quail.jpg" alt="Desert Quail Inn">
+          <img src="img/quail.jpg" width="135" height="90" alt="Desert Quail Inn">
         </div>
         <div class="hotel-description">
           <a href="#">
@@ -161,7 +167,7 @@
       </div>
       <div class="hotels">
         <div class="hotel-photo">
-          <img src="img/poco-diablo.jpg" alt="Villas at Poco Diablo">
+          <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         </div>
         <div class="hotel-description">
           <a href="#">
