@@ -151,7 +151,8 @@ main {
 
 .intro h2 {
     line-height: 26px;
-    margin-bottom: 25px;
+	margin-top: -3px;
+    margin-bottom: 30px;
 }
 
 .real-town {
@@ -176,11 +177,11 @@ main {
 
 .real-town-left h2 {
     color: white;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 .real-town-left p {
-    margin-top: 22px;
+    margin-top: 23px;
 }     
 
 .features-top {
@@ -193,7 +194,7 @@ main {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
 }
 
 .feature-img {
@@ -206,11 +207,11 @@ main {
 }
 
 .features-top .features-name {
-    margin-top: 22px;
+    margin-top: 25px;
 }
 
 .features-item p {
-    margin-top: 22px;
+    margin-top: 25px;
 }
 
 .devil-bridge {
@@ -238,7 +239,7 @@ main {
 }
 
 .devil-bridge-right p {
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .features-bottom {
@@ -260,7 +261,11 @@ main {
 }
 
 .features-bottom .features-name {
-    margin-top: 5px;
+    margin-top: 2px;
+}
+
+.features-bottom p {
+	margin-top: 23px;
 }
 
 .interested {
@@ -362,7 +367,7 @@ input[type="text"]:focus {
     height: 22px;
     position: absolute;
     top: 62px;
-    right: 68px;
+    right: 66px;
     cursor: pointer;
 }
 
@@ -381,7 +386,7 @@ input[type="text"]:focus {
     height: 22px;
     position: absolute;
     top: 128px;
-    right: 68px;
+    right: 66px;
     cursor: pointer;
 }
 
@@ -431,11 +436,11 @@ input[type="text"]:focus {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 175px;
+    width: 173px;
 }
 
 .children label {
-    width: 66px;
+    width: 70px;
 }
 
 .adults .minus {
@@ -553,7 +558,7 @@ footer .bg-opacity {
 }
 
 .footer-hashtag {
-	margin-top: 50px;
+	margin-top: 48px;
     margin-left: 60px;
     font-size: 21px;
     font-weight: bold;
@@ -670,6 +675,12 @@ footer .bg-opacity {
     min-width: 254px;
 }
 
+.infrastructure h2,
+.housing-type h2,
+.price h2 {
+	margin-top: -2px;;
+}
+
 .infrastructure input,
 .housing-type input {
     position: absolute;
@@ -717,7 +728,7 @@ input:checked + label::before {
 
 .price h2 {
     margin-left: -10px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .price-controls {
@@ -742,20 +753,24 @@ input:checked + label::before {
 
 .price-controls label {
     display: inline-block;
-    line-height: 34px;
+    line-height: 27px;
     vertical-align: top;
     cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
     width: 90px;
-    padding-left: 60px;
+    padding-left: 64px;
+}
+
+.price-controls .max-price {
+	width: 90px;
+	padding-left: 53px;
 }
 
 .price-controls input {
     width: 50px;
-    margin: -1px 4px;
+    margin: 0 4px;
     color: white;
     font: inherit;
     background: none;
@@ -816,7 +831,8 @@ form h2 {
 
 .inner-button input[type="submit"] {
     display: block;
-    margin: 0 auto;
+	margin: 0 auto;
+	margin-left: 85px;
     padding: 6px 30px;
     font-size: 14px;
     line-height: 20px;
@@ -851,7 +867,7 @@ form h2 {
 }
 
 .found h2 {
-    margin-right: 40px;
+    margin-right: 45px;
 }
 
 .found p {
@@ -861,7 +877,7 @@ form h2 {
 }
 
 .found .sort {
-    width: 770px;
+    width: 780px;
 }
 
 .sort ul {
@@ -878,18 +894,18 @@ form h2 {
     max-width: 240px;
 }
 
-.sort ul li a {
+.sort a {
     font-size: 12px;
     color: #b2b2b2;
     text-decoration: none;
     border-bottom: 1px dotted #81b3d2;
 }
 
-.sort ul li a:hover {
+.sort a:hover {
     color: #81b3d2;
 }
 
-.sort ul li a:active {
+.sort a:active {
     color: black;
     border: none;
 }
@@ -900,14 +916,14 @@ form h2 {
 }
 
 .sort-list {
-    width: 38px;
+    width: 35px;
 }
 
 .up {
     display: inline-block;
     width: 11px;
     height: 10px;
-    margin-right: 10px;
+    margin-right: 8px;
     background: url("../img/icon-up.png") no-repeat 0 0;
     vertical-align: middle;    
 }
@@ -946,6 +962,7 @@ form h2 {
 }
 
 .hotel-photo {
+	margin-top: 2px;
     margin-right: 30px;
 }
 
@@ -955,7 +972,7 @@ form h2 {
 }
 
 .hotel-description h2 {
-    margin-top: 0;
+    margin-top: -3px;
     margin-bottom: 0;
 }
 
@@ -990,6 +1007,7 @@ form h2 {
     display: inline-block;
     width: 80px;
     height: 21px;
+	margin-top: 5px;
     padding: 3px 15px;
     color: white;
     font-weight: bold;
@@ -1009,6 +1027,7 @@ form h2 {
     display: inline-block;
     width: 112px;
     height: 21px;
+	margin-top: 5px;
     padding: 3px 15px;
     color: white;
     font-weight: bold;
@@ -1043,13 +1062,13 @@ form h2 {
     padding: 3px 10px;
     margin: 0;
     background: #f2f2f2;
-    text-align: end;
+    text-align: right;
 }
 
 .star {
-    text-align: end;
+    text-align: right;
 }
 
 .star img {
-    margin-left: 4px;
+    margin-left: 3px;
 }
