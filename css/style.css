@@ -37,7 +37,7 @@ header {
     margin-bottom: 0;
 }
 
-.container {
+header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -75,47 +75,47 @@ header {
     padding: 0;
 }
 
-.main-navigation ul li:first-child {
+.main-navigation li:first-child {
     width: 240px;
     text-align: start;
 }
 
-.main-navigation ul li:nth-child(2) {
+.main-navigation li:nth-child(2) {
     width: 288px;
     text-align: start;
 }
 
-.main-navigation ul li:nth-child(3) {
+.main-navigation li:nth-child(3) {
     width: 288px;
     text-align: right;
 }
 
-.main-navigation ul li:last-child {
+.main-navigation li:last-child {
     width: 240px;
     text-align: right; 
 }
 
-.main-navigation li a {
+.main-navigation a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.main-navigation li a:hover {
+.main-navigation a:hover {
     color: #81b3d2;
 }
 
-.main-navigation li a:active {
+.main-navigation a:active {
     opacity: 0.3;
 }
 
-.main-navigation li .active {
+.main-navigation .active {
     color: #766357;
     cursor: default;
 }
 
-.main-navigation li .active:hover {
+.main-navigation .active:hover {
     color: #604e43;
 }
 
@@ -536,17 +536,10 @@ input[type="submit"]:active {
 
 footer .container {
     position: relative;
-    min-height: 122px;
-    margin-top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
+    height: 50px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    font-size: 0;
     z-index: 2;
     background: white;
 }
@@ -556,20 +549,32 @@ footer .bg-opacity {
 }
 
 .footer-hashtag {
-    margin-top: 48px;
-    margin-left: 60px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
     font-size: 21px;
     font-weight: bold;
+}
+
+.footer-social {
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .social {
     display: inline-block;
     width: 46px;
     height: 48px;
-    margin-top: 35px;
-    margin-right: 3px;
     background: #81b3d2 url("../img/sedona-sprite.png") no-repeat 0 0;
     vertical-align: middle;
+    margin-right: 5px;
+}
+
+.social:last-child {
+    margin-right: 0;
 }
 
 .social:hover {
@@ -578,14 +583,6 @@ footer .bg-opacity {
 
 .social:active {
     background-color: #5496bd;
-}
-
-.footer-social a:first-child {
-    margin-left: 28px;
-}
-
-.footer-social a:last-child {
-    margin-right: 0;
 }
 
 .social-twitter {
@@ -613,8 +610,11 @@ footer .bg-opacity {
 }
 
 .footer-copyright {
-    margin-top: 40px;
-    margin-right: 30px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
 }
 
 .academy {
@@ -632,14 +632,20 @@ footer .bg-opacity {
     background-position: -151px -80px;
 }
 
-.container .footer-copyright span,
-.container .footer-copyright a {
+.footer-copyright span,
+.footer-copyright a {
     display: inline-block;
     vertical-align: middle;
 }
 
-.container .footer-copyright span {
+.footer-copyright span {
     margin-right: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .search-criteria {
@@ -778,6 +784,15 @@ input:checked + label::before {
     font: inherit;
     background: none;
     border: none;
+}
+
+.price-controls input:hover {
+    background: none;
+}
+
+.price-controls input:focus {
+    background: none;
+    outline: none;
 }
 
 .range-controls {
